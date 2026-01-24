@@ -1,28 +1,25 @@
-# customer-churn-prediction
-End-to-end customer churn prediction with cost-sensitive evaluation and interpretability
 # Customer Churn Prediction
 
-## Business Problem
-Customer churn directly impacts recurring revenue.  
-This project predicts customers at risk of churn and proposes a cost-sensitive
-targeting strategy to maximize retention ROI.
+## Problem
+Predict customers at risk of churn to support proactive retention efforts.
 
-## Dataset
-IBM Telco Customer Churn dataset.
+## Data
+IBM Telco Customer Churn dataset (7,043 customers, mixed numeric and categorical features).
 
 ## Approach
-- Data quality audit and exploratory analysis
-- Baseline and advanced ML models
-- Proper train/validation/test split
-- Cost-sensitive threshold optimization
-- Model interpretability using feature importance and SHAP
+- Leakage-safe preprocessing pipeline
+- Logistic regression baseline
+- Train/validation/test split (70/15/15)
+- Threshold selection based on recall and precision constraints
+- Final evaluation on a held-out test set
 
-## Evaluation Metrics
-- PR-AUC
-- Recall@K
-- Expected value (business-driven metric)
+## Results (Test Set)
+- ROC-AUC: ~0.86
+- PR-AUC: ~0.69
+- Churn Recall: ~0.77
+- Churn Precision: ~0.54
 
-## Key Deliverables
-- Clean EDA and modeling notebooks
-- Reproducible ML pipeline
-- Actionable business insights
+## Key Takeaways
+- The model effectively identifies most churners while controlling outreach volume.
+- Threshold tuning is critical for aligning ML outputs with business goals.
+- Validation-only decision making prevents overly optimistic performance estimates.
