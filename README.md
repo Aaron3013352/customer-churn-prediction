@@ -45,23 +45,23 @@ This refactored pipeline is the primary version of the project.
 ---
 
 ## Repository Structure
+
 customer-churn-prediction/
-│
-├── notebooks
-│ ├── 01_sql_extract.ipynb
-│ ├── 02_eda.ipynb
-│ ├── 03_modeling_sql_features.ipynb
-│ └── 04_modeling_raw_baseline.ipynb
+├── notebooks/
+│   ├── 01_sql_extract.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_modeling_sql_features.ipynb
+│   └── 04_modeling_raw_baseline.ipynb
 │
 ├── data/
-│├── raw/
-│└── processed/
+│   ├── raw/
+│   └── processed/
 │
 ├── reports/
-│├── figures/
-││ ├── pr_curve_validation.png
-││ └── test_set_results.png
-│└── metrics.json
+│   ├── figures/
+│   │   ├── pr_curve_validation.png
+│   │   └── test_set_results.png
+│   └── metrics.json
 │
 ├── requirements.txt
 └── README.md
