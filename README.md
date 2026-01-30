@@ -46,8 +46,11 @@ This refactored pipeline is the primary version of the project.
 
 ## Repository Structure
 customer-churn-prediction/
+
 │
+
 ├── notebooks/
+
 │ ├── 01_sql_extract.ipynb
 │ ├── 02_eda.ipynb
 │ ├── 03_modeling_sql_features.ipynb
